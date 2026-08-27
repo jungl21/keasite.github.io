@@ -449,7 +449,7 @@
       min-height: 470px;
       background:
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-        url("about.png") center/cover;
+        url("Images/about.png") center/cover;
       border: 1px solid var(--line);
     }
 
@@ -718,7 +718,7 @@
 
     <nav class="nav-buttons">
       <a href="#request" class="nav-button primary">Оставить заявку</a>
-      <a href="#works" class="nav-button">Примеры работ</a>
+      <a href="#works" class="nav-button">Наши примеры работ</a>
       <a href="#about" class="nav-button">О нас</a>
     </nav>
   </header>
@@ -730,7 +730,7 @@
         <h1>Коммерческий <strong>распил</strong> для вашей мебели</h1>
 
         <p class="hero-text">
-          Профессионально распиливаем ЛДСП, МДФ, фанеру и столешницы.
+          Профессионально распиливаем ЛДСП, МДФ, ХДФ фанеру и столешницы.
           Создаём точную основу для мебели, которая выглядит дорого и служит годами.
         </p>
 
@@ -740,7 +740,7 @@
             <span>Точность обработки материалов</span>
           </div>
           <div class="advantage">
-            <b>До 10 дней</b>
+            <b>До 10 рабочих дней</b>
             <span>Средний срок выполнения заказа</span>
           </div>
           <div class="advantage">
@@ -755,9 +755,9 @@
         <h2 class="side-title">Мы превращаем материал в безупречную мебель.</h2>
 
         <p class="company-description">
-          Мы — команда технологов, мебельщиков и дизайнеров. Работаем с частными
+          Мы — команда технологов, мебельщиков и операторов станков. Работаем с частными
           мастерами, студиями интерьера, производствами и коммерческими объектами.
-          Берём на себя распил, кромление, присадку и подготовку деталей к сборке.
+          Берём на себя распил, кромление, присадку, упаковку и подготовку деталей к сборке.
         </p>
 
         <ul class="contact-list">
@@ -802,7 +802,7 @@
         <article class="service-card">
           <div class="service-number">02</div>
           <h3>Распил</h3>
-          <p>Профессиональный распил ЛДСП, МДФ, фанеры и столешниц по вашим размерам.</p>
+          <p>Профессиональный распил ЛДСП, МДФ, ХДФ, Фанеры и столешниц по вашим размерам.</p>
         </article>
 
         <article class="service-card">
@@ -884,7 +884,7 @@
 
       <div class="work-grid">
         <article class="work-card">
-          <img src="example1place.jpg" alt="Кухонный гарнитур">
+          <img src="Images/example1place.jpg" alt="Кухонный гарнитур">
           <div class="work-info">
             <span>Кухня на заказ</span>
             <h3>Минимализм, дерево и стекло</h3>
@@ -892,7 +892,7 @@
         </article>
 
         <article class="work-card">
-          <img src="example2place.png" alt="Гардеробная">
+          <img src="Images/example2place.png" alt="Гардеробная">
           <div class="work-info">
             <span>Гардеробная</span>
             <h3>Просторная система хранения</h3>
@@ -900,7 +900,7 @@
         </article>
 
         <article class="work-card">
-          <img src="example3place.jpg" alt="Отель в Санкт-Петербурге">
+          <img src="Images/example3place.jpg" alt="Отель в Санкт-Петербурге">
           <div class="work-info">
             <span>Коммерческий распил</span>
             <h3>Отель на "Средний пр. 75"</h3>
@@ -927,6 +927,7 @@
 
         <div class="about-values">
           <span>Собственное производство</span>
+          <span>Профессиональное оборудование</span>
           <span>Контроль качества</span>
           <span>Работа по договору</span>
           <span>Доставка по городу</span>
@@ -945,23 +946,28 @@
           </p>
         </div>
 
-        <form class="request-form" id="requestForm">
-          <input type="text" placeholder="Ваше имя" required>
-          <input type="tel" placeholder="Телефон" required>
-          <input type="email" placeholder="Электронная почта">
-          <textarea placeholder="Опишите ваш заказ: материал, размеры, количество деталей"></textarea>
+       <form class="request-form" id="requestForm">
+    <input type="text" placeholder="Ваше имя" required>
+    <input type="tel" placeholder="Телефон" required>
+    <input type="email" placeholder="Электронная почта">
+    <textarea placeholder="Опишите ваш заказ: материал, размеры, проект"></textarea>
 
-          <label class="consent">
-            <input type="checkbox" name="consent" required>
-            <span>
-              Я даю согласие на обработку персональных данных (ФИО, телефон, email)
-              в целях обработки заявки и обратной связи.
-            </span>
-          </label>
+    <label class="consent">
+        <input type="checkbox" name="consent" required>
+        <span>
+            Я даю согласие на 
+            <a href="Documents\politika-konfidencialnosti.pdf" 
+               target="_blank" 
+               style="color: var(--gold); text-decoration: none;">
+                обработку персональных данных
+            </a>
+            (ФИО, телефон, email) в целях обработки заявки и обратной связи.
+        </span>
+    </label>
 
-          <button class="form-button" type="submit">Отправить заявку</button>
-          <p class="form-message" id="formMessage">Спасибо! Ваша заявка принята. Мы скоро свяжемся с вами.</p>
-        </form>
+    <button class="form-button" type="submit">Отправить заявку</button>
+    <p class="form-message" id="formMessage">Спасибо! Ваша заявка принята. Мы скоро свяжемся с вами.</p>
+</form>
       </div>
     </section>
   </main>
@@ -981,14 +987,26 @@
             <p style="margin:4px 0;">Email: <a href="mailto:info@keamebel.ru" style="color:var(--gold-light); text-decoration:none;">info@keamebel.ru</a></p>
         </div>
 
-        <!-- Документы -->
-        <div style="flex:1; min-width:280px;">
-            <p style="margin:0 0 12px 0; font-size:14px; color:var(--gold); font-weight:600; letter-spacing:1px;">ДОКУМЕНТЫ</p>
-            <p style="margin:6px 0;"><a href="/privacy-policy/" target="_blank" style="color:#ccc; text-decoration:none;">Политика конфиденциальности</a></p>
-            <p style="margin:6px 0;"><a href="/consent/" target="_blank" style="color:#ccc; text-decoration:none;">Согласие на обработку персональных данных</a></p>
-            <p style="margin:6px 0;"><a href="/terms/" target="_blank" style="color:#ccc; text-decoration:none;">Пользовательское соглашение</a></p>
-            <p style="margin:6px 0;"><a href="/cookie/" target="_blank" style="color:#ccc; text-decoration:none;">Политика cookies</a></p>
-        </div>
+        <!-- ДОКУМЕНТЫ -->
+<div style="flex:1; min-width:280px;">
+    <p style="margin:0 0 12px 0; font-size:14px; color:var(--gold); font-weight:600; letter-spacing:1px;">ДОКУМЕНТЫ</p>
+    <p style="margin:6px 0;">
+        <a href="Documents\politika-konfidencialnosti.pdf" target="_blank" 
+           style="color:#ccc; text-decoration:none;">Политика конфиденциальности</a>
+    </p>
+    <p style="margin:6px 0;">
+        <a href="Documents\soglasie-na-obrabotku-pd.pdf" target="_blank" 
+           style="color:#ccc; text-decoration:none;">Согласие на обработку персональных данных</a>
+    </p>
+    <p style="margin:6px 0;">
+        <a href="Documents\polzovatelskoe-soglashenie.pdf" target="_blank" 
+           style="color:#ccc; text-decoration:none;">Пользовательское соглашение</a>
+    </p>
+    <p style="margin:6px 0;">
+        <a href="Documents\politika-cookie.pdf" target="_blank" 
+           style="color:#ccc; text-decoration:none;">Политика cookies</a>
+    </p>
+</div>
 
         <!-- Копирайт -->
         <div style="flex:1; min-width:280px; text-align:left;">
@@ -1017,7 +1035,11 @@
             </p>
             <p style="margin: 0;">
                 Чтобы сайт работал правильно, анализировать трафик и улучшать качество. 
-                <a href="/privacy-policy/" target="_blank" style="color: var(--gold-light); text-decoration: none;">Подробнее в политике конфиденциальности</a>
+                <a href="Documents\politika-cookie.pdf" 
+                   target="_blank" 
+                   style="color: var(--gold-light); text-decoration: none;">
+                    Подробнее в политике конфиденциальности
+                </a>
             </p>
         </div>
 
